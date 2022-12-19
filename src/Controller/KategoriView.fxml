@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KategoriViewController">
+    <children>
+      <TableView fx:id="tbKategori" layoutX="287.0" layoutY="49.0" onSort="#pilihKategori" prefHeight="353.0" prefWidth="316.0">
+        <columns>
+            <TableColumn fx:id="cNama" prefWidth="163.33331298828125" style="-fx-background-color: #;" text="Nama Produk" />
+            <TableColumn fx:id="cKategori" prefWidth="150.66665649414062" text="Kategori" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmKategori" layoutX="38.0" layoutY="59.0" onAction="#pilihKategori" prefWidth="150.0" promptText="pilih inputan :" style="-fx-background-color: #ADD8E6;" />
+      <ImageView fitHeight="226.0" fitWidth="252.0" layoutX="29.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="328.0" text="Berikut daftar barang pada kategori" />
+      <HBox prefHeight="49.0" prefWidth="603.0" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="246.0" layoutY="24.0" text="Kategori Produk">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
