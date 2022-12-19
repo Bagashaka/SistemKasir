@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="Controller.PenjualanOutputController">
+    <children>
+      <TableView fx:id="tbDataPenjualan" layoutX="241.0" layoutY="63.0" prefHeight="337.0" prefWidth="359.0">
+        <columns>
+          <TableColumn fx:id="cNama" prefWidth="180.66668701171875" text="Nama" />
+            <TableColumn fx:id="cHarga" prefWidth="178.0" text="Harga Satuan Produk" />
+        </columns>
+      </TableView>
+      <HBox layoutY="-2.0" prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="247.0" layoutY="28.0" text="Data Penjualan">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmDataPenjualan" layoutX="14.0" layoutY="97.0" prefWidth="150.0" promptText="pilih inputan" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="21.0" layoutY="327.0" text="note : ini adalah daftar produk yang tersedia ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="350.0" text="Silahkan pilih inputan yang tesedia">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="163.0" fitWidth="107.0" layoutX="68.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngwing.com.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

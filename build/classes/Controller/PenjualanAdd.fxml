@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PenjualanAddController">
+    <children>
+      <TableView fx:id="tbDataPenjualan" layoutX="241.0" layoutY="63.0" prefHeight="170.0" prefWidth="359.0">
+        <columns>
+          <TableColumn fx:id="cNama" prefWidth="178.66668701171875" text="Nama" />
+            <TableColumn fx:id="cHarga" prefWidth="179.33331298828125" text="Harga" />
+        </columns>
+      </TableView>
+      <HBox layoutY="-2.0" prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="247.0" layoutY="28.0" text="Data Penjualan">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmDataPenjualan" layoutX="14.0" layoutY="97.0" onAction="#pilihPenjualan" prefWidth="150.0" promptText="pilih inputan" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="14.0" layoutY="370.0" text="note : masukkan barang yang ingin dibeli">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="134.0" prefHeight="15.0" prefWidth="74.0" text="Nama Produk">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="flNamPro" layoutX="15.0" layoutY="150.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="15.0" layoutY="189.0" text="Jumlah Produk">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="flJumPro" layoutX="15.0" layoutY="207.0" prefHeight="25.0" prefWidth="176.0" />
+      <TextField fx:id="flTotHar" layoutX="16.0" layoutY="266.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="18.0" layoutY="246.0" text="Total Harga">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbPembelian" layoutX="241.0" layoutY="239.0" prefHeight="161.0" prefWidth="359.0">
+        <columns>
+          <TableColumn fx:id="cNamPem" prefWidth="115.3333740234375" text="Nama" />
+          <TableColumn fx:id="cJumPro" prefWidth="134.6666259765625" text="Jumlah Produk" />
+            <TableColumn fx:id="cTotHar" prefWidth="108.00002034505206" text="Harga" />
+        </columns>
+      </TableView>
+      <Label layoutX="18.0" layoutY="350.0" text="Jumlah barang :">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTotalProduk" layoutX="94.0" layoutY="350.0" text="Label">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="333.0" text="Total harga      : Rp.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTotalHarga" layoutX="105.0" layoutY="333.0" text="Label">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

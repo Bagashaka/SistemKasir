@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BarangInputController">
+    <children>
+      <Label layoutX="88.0" layoutY="71.0" text="Barcode" />
+      <Label layoutX="88.0" layoutY="114.0" text="Nama Barang" />
+      <Label layoutX="88.0" layoutY="199.0" text="Jumlah" />
+      <Label layoutX="88.0" layoutY="156.0" text="Harga" />
+      <Label layoutX="88.0" layoutY="240.0" text="Diskon" />
+      <Label layoutX="88.0" layoutY="280.0" text="Expired" />
+      <TextField fx:id="flBar" layoutX="241.0" layoutY="67.0" prefHeight="25.0" prefWidth="275.0" promptText=" Masukkan kode Barcode disini :">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField fx:id="flNama" layoutX="241.0" layoutY="110.0" prefHeight="25.0" prefWidth="275.0" promptText="Masukkan nama barang disini :">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField fx:id="flHarga" layoutX="241.0" layoutY="152.0" prefHeight="25.0" prefWidth="275.0" promptText="Masukkan harga barang disini :">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField fx:id="flJumlah" layoutX="242.0" layoutY="195.0" prefHeight="25.0" prefWidth="275.0" promptText="Masukkan jumlah barang disini :">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField fx:id="flDiskon" layoutX="241.0" layoutY="236.0" prefHeight="25.0" prefWidth="275.0" promptText="Masukkan diskon disini :">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField fx:id="flExpired" layoutX="241.0" layoutY="276.0" prefHeight="25.0" prefWidth="275.0" promptText="Masukkan berapa hari expired disini : ">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Label layoutX="84.0" layoutY="319.0" text="Kategori" />
+      <TextField fx:id="flKategori" layoutX="241.0" layoutY="315.0" prefHeight="25.0" prefWidth="275.0" promptText="Masukkan kategori disini">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <ComboBox fx:id="cmBarang" layoutX="417.0" layoutY="361.0" onAction="#pilihBarang" prefWidth="150.0" promptText="pilih inputan :" style="-fx-background-color: #ADD8E6;" />
+      <HBox prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="266.0" layoutY="25.0" text="Input Barang">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

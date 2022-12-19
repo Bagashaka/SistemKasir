@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KategoriInputController">
+    <children>
+      <TableView fx:id="tbKategori" layoutX="287.0" layoutY="49.0" prefHeight="351.0" prefWidth="314.0">
+        <columns>
+          <TableColumn fx:id="cKategori" prefWidth="311.9999694824219" text="Kategori" />
+        </columns>
+      </TableView>
+      <Label layoutX="249.0" layoutY="14.0" text="Hapus Kategori">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmKategori" layoutX="46.0" layoutY="66.0" onAction="#pilihKategori" prefWidth="150.0" promptText="pilih inputan :" style="-fx-background-color: #ADD8E6;" />
+      <TextField fx:id="flAddKategori" layoutX="44.0" layoutY="187.0" prefHeight="25.0" prefWidth="206.0" promptText="Masukkan Kategori yang ingin ditambahkan :">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <HBox prefHeight="49.0" prefWidth="601.0" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="270.0" layoutY="23.0" text="Kategori">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="165.0" text="Nama Kategori">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="299.0" text="Kategori dapat ditambahkan pada  menu ini">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

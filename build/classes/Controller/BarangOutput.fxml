@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BarangOutputController">
+   <children>
+      <TableView fx:id="TBbarang" layoutX="23.0" layoutY="55.0" prefHeight="289.0" prefWidth="553.0">
+         <columns>
+            <TableColumn fx:id="Cbarcode" prefWidth="62.0" text="Barcode" />
+            <TableColumn fx:id="Cnama" prefWidth="97.33328247070312" text="Nama Produk" />
+            <TableColumn fx:id="Charga" prefWidth="90.00006103515625" text="Harga" />
+            <TableColumn fx:id="Cjumlah" prefWidth="84.66668701171875" text="Jumlah" />
+            <TableColumn fx:id="Cdiskon" prefWidth="48.66668701171875" text="Diskon" />
+            <TableColumn fx:id="Cexpired" minWidth="0.0" prefWidth="84.00006103515625" text="Expired" />
+            <TableColumn fx:id="Ckategori" minWidth="0.0" prefWidth="89.3333740234375" text="Kategori" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="cmBarang" layoutX="426.0" layoutY="360.0" onAction="#pilihBarang" prefWidth="150.0" promptText="pilih inputan:" style="-fx-background-color: #ADD8E6;" />
+      <HBox layoutY="-1.0" prefHeight="55.0" prefWidth="601.0" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="250.0" layoutY="27.0" text="Daftar Barang">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
