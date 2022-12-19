@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KategoriDeleteController">
+    <children>
+      <TableView fx:id="tbKategori" layoutX="290.0" layoutY="49.0" prefHeight="351.0" prefWidth="312.0">
+        <columns>
+          <TableColumn fx:id="cKategori" prefWidth="310.66668701171875" text="Kategori" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmKategori" layoutX="46.0" layoutY="66.0" onAction="#pilihKategori" prefWidth="150.0" promptText="pilih inputan :" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="40.0" layoutY="177.0" text="Kategori" />
+      <TextField fx:id="flDelKategori" layoutX="33.0" layoutY="208.0" prefHeight="25.0" prefWidth="206.0" promptText="Masukkan Kategori yang ingin dihapus :">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="285.0" prefHeight="25.0" prefWidth="271.0" text="note : Jika ingin menghapus kategori anda harus menghapus ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="313.0" text="Produk yang memiliki nama Kategori yang ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="336.0" text="ingin anda hapus">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <HBox layoutX="-1.0" prefHeight="49.0" prefWidth="603.0" style="-fx-background-color: #ADD8E6;" />
+      <Label layoutX="249.0" layoutY="23.0" text="Hapus Kategori">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
